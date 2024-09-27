@@ -1,0 +1,88 @@
+/* Sección de álbum con dos columnas */
+.album-section {
+    padding: 5rem 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.album-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+}
+
+.left-column img {
+    width: 100%;
+    max-width: 40rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.left-column img:hover {
+    transform: scale(1.05);
+}
+
+.right-column {
+    flex: 1;
+    padding-left: 3rem;
+}
+
+.right-column h1 {
+    font-size: 5rem;
+    color: #9b5138;
+}
+
+.right-column h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.right-column p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Estilo para la línea divisora */
+.divider {
+    border: 0;
+    height: 1px;
+    background: #534b41;
+    margin: 2rem 0;
+}
+
+/* Sección de la explicación de la canción */
+.song-explanation h2 {
+    font-size: 3.5rem;
+    color: #9b5138;
+    margin-bottom: 5px;
+}
+
+.song-explanation p {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.song-explanation span{
+    font-style: italic;
+    font-size: 1.50rem;
+    font-weight: bold;
+}
+
+/* Responsivo para la sección del álbum */
+@media (max-width: 768px) {
+    .album-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-column {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+}

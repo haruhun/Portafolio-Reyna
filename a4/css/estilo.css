@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+/*las medidas sean multiplos de 1rem=10px*/
+html{
+font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #d0d0d0;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/*acomodar posicion y vista del header*/
+header {
+    margin-top: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color:  #d0d0d0;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/*orden de apilamiento*/
+    z-index: 100;
+    border-bottom: 1px solid ghostwhite;
+    margin-bottom: 2rem;
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: #d0d0d0;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: ghostwhite;
+    border-bottom: 3px solid ghostwhite;
+}
+
+/*diseño responsive de la barra de navegacion*/
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid ghostwhite;
+        border-bottom: 3px solid ghostwhite;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #888888;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid ghostwhite;
+    } 
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+/*posicionar el texto*/
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*distancia entre filas o columnas*/
+    gap: 8rem;
+    background-color: #888888;
+}
+
+.inicio .inicio-content h1{
+    font-size: 6.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 20px;
+}
+
+
+.inicio-img{
+    border-radius: 50%;
+}
+
+.inicio-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+footer{
+    text-align: center; /* Centra el texto del footer */
+    padding: 10px 0; /* Espacio interno para separarlo del contenido */
+    font-size: 14px; /* Tamaño de texto adecuado */
+    color: #555; /* Color del texto */
+    background-color: transparent; /* Fondo transparente para eliminar la barra */
+    position: relative; /* Permite que el footer se quede al final del contenido */
+    clear: both; /* Asegura que no haya interferencia con otros elementos flotantes */
+}
+
+footer small{
+    color: white;
+}
+
+main{
+    padding-top: 60px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+social-icons {
+    text-align: left; /* Centramos los íconos */
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+  
+  .social-icons a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 5px; /* Espacio entre los íconos */
+    font-size: 17px; /* Tamaño de los íconos */
+  }
+  
+  .social-icons a:hover {
+    color: ghostwhite00000000000000000000000000; /* Cambia el color al pasar el ratón (rojo en este caso) */
+  }
+
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh; /* Asegura que el contenido cubra toda la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Toma todo el espacio disponible en el contenido */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

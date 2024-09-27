@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+/*las medidas sean multiplos de 1rem=10px*/
+html{
+font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+/*acomodar posicion y vista del header*/
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/*orden de apilamiento*/
+    z-index: 100;
+}
+/*diseño del "logo"*/
+.logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+}
+
+/*cambiar cuando se ponga el cursor sobre la palabra en la barra de nav sin dar click*/
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+
+

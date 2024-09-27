@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+
+main {
+    padding: 20px;
+}
+
+.album-header {
+    margin-top: 90px; /* Añade espacio entre el header y la barra de navegación */
+    text-align: left; /* Opcional: Centra el texto */
+    font-size: 24px;
+    color: white;
+    padding-top: 20px; /* Añade espacio en la parte superior del encabezado */
+    margin-bottom: 20px;
+}
+
+.album-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.album {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); /* Ajusta el ancho para cuatro columnas con espacio entre ellas */
+    box-sizing: border-box;
+}
+
+.album-image, .album-details{
+    padding: 15px;
+}
+
+.album-image img {
+    width: 100%;
+    height: auto;
+}
+
+.album-details {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.sencillos-header{
+    margin-top: 20px; /* Añade espacio entre el header y la barra de navegación */
+    text-align: left; /* Opcional: Centra el texto */
+    font-size: 24px;
+    color: white;
+    padding-top: 20px; /* Añade espacio en la parte superior del encabezado */
+    margin-bottom: 20px;
+    border-bottom: 1px white;
+}
+
+.sencillo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sencillo {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); /*cuatro columnas*/
+    box-sizing: border-box;
+}
+
+.sencillo-image, .sencillo-details{
+    padding: 15px;
+}
+
+.sencillo-image img {
+    width: 100%;
+    height: auto;
+}
+
+.sencillo-details {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.sencillos-section {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para el título */
+    justify-items: center; /* Centrar el contenido */
+}
+
+.sencillos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para las imágenes */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.soundtrack-header{
+    margin-top: 20px; /* Añade espacio entre el header y la barra de navegación */
+    text-align: left; /* Opcional: Centra el texto */
+    font-size: 24px;
+    color: white;
+    padding-top: 20px; /* Añade espacio en la parte superior del encabezado */
+    margin-bottom: 20px;
+    border-bottom: 1px white;
+}
+
+.soundtrack-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.soundtrack{
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+}
+.soundtrack-image, .soundtrack-details {
+    padding: 15px;
+}
+
+.soundtrack-image img{
+    width: 100%;
+    height: auto;
+}
+
+.soundtrack-details{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.ep-header{
+    margin-top: 20px; /* Añade espacio entre el header y la barra de navegación */
+    text-align: left; /* Opcional: Centra el texto */
+    font-size: 24px;
+    color: white;
+    padding-top: 0px; /* Añade espacio en la parte superior del encabezado */
+    margin-bottom: 0px;
+    border-bottom: 1px white;
+}
+
+.ep-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ep{
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+}
+.ep-image, .ep-details {
+    padding: 15px;
+}
+
+.ep-image img{
+    width: 100%;
+    height: auto;
+}
+
+.ep-details{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.digital-header{
+    margin-top: 0; /* Añade espacio entre el header y la barra de navegación */
+    text-align: left; /* Opcional: Centra el texto */
+    font-size: 24px;
+    color: white;
+    padding-top:0; /* Añade espacio en la parte superior del encabezado */
+    margin-bottom: 20px;
+    border-bottom: 1px white;
+   
+   
+}
+
+.digital-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.digital{
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.digital-image, .digital-details{
+    padding: 15px;
+}
+
+.digital-image img{
+    width: 100%;
+    height: auto;
+}
+
+.digital-details{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;  
+}
+
+.video-container {
+    width: 100%; /* Asegura que el video ocupe todo el ancho */
+    height: auto; /* Ajusta la altura automáticamente */
+    max-height: 400px; /* Limita la altura máxima para que no sea muy alto */
+}
+
+
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.video-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+/*las medidas sean multiplos de 1rem=10px*/
+html{
+font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+/*acomodar posicion y vista del header*/
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+/*orden de apilamiento*/
+    z-index: 100;
+}
+/*diseño del "logo"*/
+.logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+}
+
+/*cambiar cuando se ponga el cursor sobre la palabra en la barra de nav sin dar click*/
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/*diseño responsive de la barra de navegacion*/
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #b74b4b;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #b74b4b;
+    } 
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+/*posicionar el texto*/
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*distancia entre filas o columnas*/
+    gap: 8rem;
+    background-color: black;
+}
+
+.inicio .inicio-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color:#b74b4b
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    color: black; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 2rem; /* Espaciado interno */
+    position: fixed; /* Fijo en la parte inferior */
+    bottom: 0;
+    width: 100%; /* Ancho completo */
+    font-size: 1rem; /* Tamaño de fuente */
+    border-top: 1px solid white; /* Borde superior opcional */
+    clear: both;
+
+    p{
+        font-size: 1rem;
+        color: black;
+    }
+}
+

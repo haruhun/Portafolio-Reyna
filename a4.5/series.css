@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+/*las medidas sean multiplos de 1rem=10px*/
+html{
+font-size: 62.5%;
+height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/*acomodar posicion y vista del header*/
+header {
+    margin-top: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color:  #333;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/*orden de apilamiento*/
+    z-index: 100;
+    border-bottom: 1px solid #c21515;
+    margin-bottom: 2rem;
+}
+
+/*diseño del "logo"*/
+.logo img{
+    width: 6rem;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #c21515;
+    border-bottom: 3px solid #c21515;
+}
+
+/*diseño responsive de la barra de navegacion*/
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #c21515;
+        border-bottom: 3px solid #c21515;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #c21515;
+    } 
+}
+
+
+
+.series-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.series-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.series-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.series-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.series-item iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+}
+
+footer{
+    text-align: center; /* Centra el texto del footer */
+    padding: 10px 0; /* Espacio interno para separarlo del contenido */
+    font-size: 14px; /* Tamaño de texto adecuado */
+    color: #555; /* Color del texto */
+    background-color: transparent; /* Fondo transparente para eliminar la barra */
+    position: relative; /* Permite que el footer se quede al final del contenido */
+    clear: both; /* Asegura que no haya interferencia con otros elementos flotantes */
+}
+
+footer small{
+    color: white;
+}
